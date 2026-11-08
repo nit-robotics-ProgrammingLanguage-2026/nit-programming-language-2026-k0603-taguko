@@ -2,19 +2,19 @@
 
 int main(void)
 {
-    int n;
-    int i;
-    int sum = 0;
-    scanf("%d", &n);
-    if (n <= 0)
+    long n;
+    long i;
+    long sum = 0;
+    scanf("%ld", &n);
+    if (n < 0)
     {
         printf("NG");
         return 0;
     }
-    for (i = 1; i < n; i++)
+    for (i = 1; i <= n; i++)
     {
         sum += i;
     }
-    printf("%d", sum);
+    printf("%ld", sum);
     return 0;
 }
